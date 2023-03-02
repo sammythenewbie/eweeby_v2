@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            
+        }
+        body {
+        margin:0;
+        font-family: Montserrat;
+        }
+        div.all{
+    display: flex;
+}
+footer {
+    background: #091a14;
+    color:white;
+    width: 100vw;
+    padding-top: 15px;
+    height: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 33vw 34vw 33vw;
+    text-align: center;
+}
+h3 {
+    text-decoration: none;
+    font-family: arial;
+    margin: 15px;
+    
+}
+footer > div > p {
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    text-indent: 20px;
+    font-size: 20px;
+}
+img.ft {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+    
+    form {
+        width:100vw;
+        height:auto;
+        padding:10px;
+        background:.;
+        font-size:28px;
+        border: 4px solid #8098ff;
+    }
+    input {
+        font-size:24px;
+        border:3px solid #2b82ff;
+        border-radius: 0 10px 0 10px;
+        padding:10px;
+    }
+    textarea {
+        font-size:22px;
+        border:3px solid #2b82ff;
+        padding:10px;
+        border-radius: 20px;
+        margin:auto;
+        width:100%;
+        font-family:sans-serif;
+    }
+    header {
+    width:100%;
+    height: 25vh;
+    /*object-fit: contain;*/
+    /*border: 2px solid #8098ff;*/
+    display: flex;
+    margin: auto;
+    }
+ .logi {
+     display: flex;
+     width: 100vw;
+     align-items: center;
+    justify-content: center;
+ }
+ img#logo {
+    width: 35%;
+    height: 100%;
+    
+    margin-top: 20px;
+    
+}
+input:type("submit"){
+    border-radius: 10px;
+}
+div.sc{
+    width: 34vw;
+    padding: 10px;
+    object-fit: contain;
+}
+.sc > img {
+    width: 100%;
+    margin: auto;
+}
+.in, .us {
+    width: 33vw;
+    
+}
+.in {
+    padding: 0px;
+}
+h3 {
+    border: 2px solid #f8ff80;
+    text-align: center;
+    width: 110px;
+    margin: auto;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+ 
+    
+    <form action="mailto: samdigawan29@gmail.com" method="post" enctype="plain/text">
+        <header>
+         <div class="logi">
+            <img src="png_20221229_072610_0000.png" alt="" id="logo">
+        </div>
+    </header>
+    <label for="name">Full Name: </label>
+         <input type="text" name="name" id="name" placeholder="" required><br>
+        Year & Section: 11- Mark Zuckerberg
+        <br>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="Gender" id="gender" value="Male"> Male <input type="radio" name="Gender" id="gender" value="Female"> Female
+        <br><br>
+        <p>Tell us your thoughts, problems, and anything in relation to our E-Learning Website. Rest assured that this form will be kept confidential and will not be shared publicly. </p><br><br>
+        <textarea name="Comment" cols="45" rows="10" placeholder="Write here..." wrap="wrap" required></textarea>
+        <br>
+       <input type="submit" value="Send">
+    </form>
+ 
+     <footer>
+     <div class="us"><h3>About</h3>
+     <p>We are delighted to present to you our very own E-Learning Website. This is for compliance on ou Research instrument in PR-II. Please use this media at it's best, if you have any concerns or thoughts, write us through the tab in the nav bar. <br>-/Regards: Group 1</p>
+     </div>
+     <div class="sc"><h3>Our School</h3><br>
+     <img src="school.jpg" alt="">
+     </div>
+     <div class="in"><h3>Our Insights</h3>
+     <p>A generation teached through technology brings a better future.</p>
+     </div>
+     
+ </footer>
+</body>
+</html>
+

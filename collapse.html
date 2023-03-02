@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+    @font-face { font-family: Marske; src: url('/Marske.ttf'); } 
+.collapsible {
+  background-color: #1B1340;
+  color: white;
+  cursor: pointer;
+  padding:18px;
+  min-width: 50%;
+  word-wrap:wrap;
+  font-weight: bolder;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  margin-top:10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #140A44;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left:20px;
+  margin-right:0px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.content p {
+    text-indent:30px;
+    text-align:justify;
+    padding:10px;
+    line-height:2;
+}
+.content {
+  width:100%; 
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  font-family: Marske;
+  }
+  .containers {
+      display:flex;
+      flex-direction:column;
+      gap:;
+      flex-wrap:;
+  }
+  h3 {
+      padding:10px;
+  }
+  form {
+      padding-top:0;
+      padding:10px;
+  }
+  input[type=button] {
+      padding-inline:15px;
+      padding-block:10px;
+  }
+  </style>
+  <body>
+      <div class="containers">
+<button class="collapsible">Creative Ai Art Definition</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <h3>Exercises:</h3>
+  <form>
+      Choose the letter of the best answer.
+      <br><br>
+      1. What is Ai? <br>
+      <input type="radio" name="1" id="correct1"> A. It is an Artificial intelligence. 
+      <br>
+      <input type="radio" name="1" id=""> B. It is an Artificial Seasoning.
+      <br><br>
+      2. Why do you think people use Ai?<br>
+      <input type="radio" name="2" id="correct2"> A. It makes work easier.
+      <br>
+      <input type="radio" name="2" id=""> B. It helps us relax.
+      <br><br><br>
+      <p id="score">Score: </p>
+      <input type="button" value="Submit Answers" onclick="results()">
+  </form>
+  
+</div>
+
+<button class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    }
+     else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+function results() {
+    var collapse = document.getElementsByClassName("collapsible");
+        if (document.getElementsByClassName("collapsible").active) {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    var score = 0;
+        if (document.getElementById('correct1').checked) {
+        score++;
+        }
+        if (document.getElementById('correct2').checked) {
+        score++;
+        }
+        document.getElementById('score').innerHTML = "Your score is" + " " + score + "/2.";
+        
+}
+</script>
+
+</body>
+</html>
